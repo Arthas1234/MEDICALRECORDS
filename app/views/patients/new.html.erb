@@ -29,7 +29,11 @@
             <%= f.label :reason_of_consultation %>
             <%= f.text_field :reason_of_consultation %>
         </p>
-            
+        
+        <p>
+        <%= f.label :date_of_birth %>
+        <%= f.select_date :date_of_birth, :order=>[:month, :day, :year] ) %>
+        </p>    
 
         <%= f.submit %>
 
