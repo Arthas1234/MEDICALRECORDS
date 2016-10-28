@@ -1,0 +1,36 @@
+    <%= form_for(@patients) do |f| %>
+        <p>
+            <%= f.label :id_patient %>
+            <%= f.text_field :id_patient %>
+        </p>
+
+        <p>
+            <%= f.label :firstname %>
+            <%= f.text_field :patient_firstname %>
+        </p>
+
+        <p>
+            <%= f.label :middlename %>
+            <%= f.text_field :patient_middlename %>
+        </p>
+
+        <p>
+            <%= f.label :lastname %>
+            <%= f.text_field :patient_lastname %>
+        </p>
+
+        <p>
+            <%= f.label :address %>
+            <%= f.text_field :address %>
+        </p>
+
+            
+        <p>
+            <%= f.label :reason_of_consultation %>
+            <%= f.text_field :reason_of_consultation %>
+        </p>
+            
+
+        <%= f.submit %>
+
+    <% end %>

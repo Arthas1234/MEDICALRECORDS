@@ -1,0 +1,28 @@
+<h1>Pacientes</h1>
+
+<table border = "1">
+    <thead>
+        <tr>
+            <th># Paciente</th>
+            <th>Primer Nombre</th>
+            <th>Segundo Nombre</th>
+            <th>Apellidos</th>
+            <th>Direccion</th>
+            <th>Motivo de la consulta</th>
+            <th>Fecha de Nacimiento</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @patients.each do |patient| %>
+            <tr>
+                <td><%= patient.id_patient %></td>
+                <td><%= patient.patient_firstname %></td>
+                <td><%= patient.patient_middlename %></td>
+                <td><%= patient.patient_lastname %></td>
+                <td><%= patient.address %></td>
+                <td><%= patient.reason_of_consultation %></td>
+                <td><%= patient.date_of_birth %></td>
+            </tr>
+        <% end %>
+    </tbody>
+</table>
